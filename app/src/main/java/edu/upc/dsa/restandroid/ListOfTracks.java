@@ -1,6 +1,7 @@
 package edu.upc.dsa.restandroid;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -59,6 +60,13 @@ public class ListOfTracks extends AppCompatActivity {
         Log.i("FIRST ACCOMPLISHMENT:","CLOSER TO GET THE UPDATE");
         Intent intent = new Intent(ListOfTracks.this, UpdateTrack.class);
         ListOfTracks.this.startActivity(intent);
+    }
+    public void saveVariables(Track trackSelected) {
+        SharedPreferences sharedPreferences= getSharedPreferences("trackInformation", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor =sharedPreferences.edit();
+        editor.putString("title",trackSelected.getTitle());
+        editor.putString("singer", trackSelected.getSinger());
+        editor.apply();
     }
 
 }

@@ -52,7 +52,6 @@ public class DeleteTrackActivity extends AppCompatActivity {
     public void goBackClick(View view){
         Intent intentRegister = new Intent(DeleteTrackActivity.this, MainActivity.class);
         DeleteTrackActivity.this.startActivity(intentRegister);
-
     }
 
 }
