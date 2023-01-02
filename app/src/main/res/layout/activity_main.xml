@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="TRACK SERVICE!"
+            android:textAlignment="center"
+            android:textColor="@color/pinky_vibrant"
+            android:textSize="75dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:id="@+id/linear2">
+
+        <Button
+            android:id="@+id/seeListBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/cardview_shadow_start_color"
+            android:onClick="clickToList"
+            android:text="See all tracks"
+            android:textColor="@color/green_vibrant"
+            android:textSize="27sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2">
+
+        <Button
+            android:id="@+id/addProductBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickToAdd"
+            android:backgroundTint="@color/cardview_shadow_start_color"
+            android:text="Add a track"
+            android:textColor="@color/green_vibrant"
+            android:textSize="27sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear3">
+
+        <Button
+            android:id="@+id/deleteProductBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/cardview_shadow_start_color"
+            android:onClick="clickToDelete"
+            android:text="DELETE A TRACK"
+            android:textColor="@color/green_vibrant"
+            android:textSize="27sp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_1">
+    <Button
+        android:id="@+id/returnListBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goBackList"
+        android:text="←"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:textColor="@color/green_vibrant"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <TextView
+        android:id="@+id/title_gadgets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TRACKS"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/green_vibrant"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTracks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/title_gadgets">
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
